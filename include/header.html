@@ -43,25 +43,10 @@
             return href;
         }
 
-        // if(thisLocation.attr('href').indexOf('index.html') < 0){
-        //     hrefChange('#top-nav a','..');
-        //     hrefChange('#top-logo a','../index.html');
-        // }
-        
-        // if( currentHref == 'index' || currentHref == '' ){
-        //     hrefChange('#top-nav a','..');
-        //     hrefChange('#top-logo a','../index.html');
-        // }
-
-        // if( currentHref == 'index' || currentHref == '' ){
-        //     hrefChange('#top-nav a','./');
-        //     hrefChange('#top-logo a','./');
-        // }else{
-        //     hrefChange('#top-nav a','../');
-        //     hrefChange('#top-logo a','../');
-        // }
-
-        if( currentHref != 'index' || currentHref != '' ){
+        if( currentHref == 'index' || currentHref == '' ){
+            hrefChange('#top-nav a','.');
+            hrefChange('#top-logo a','.');
+        }else{
             hrefChange('#top-nav a','..');
             hrefChange('#top-logo a','..');
         }
