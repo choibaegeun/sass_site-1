@@ -34,6 +34,7 @@ body.subpage {
                 }
             }
             .content {                
+                min-height: calc( 100vh - 191px );          
                 &.gallery, &.location {
                     flex: 100%;
                     .inner {
