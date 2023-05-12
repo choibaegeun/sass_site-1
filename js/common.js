@@ -83,4 +83,15 @@ $(function(){
     $('.navi-wrap > img').each(function(){
         pagingBtnFunc($(this));
     });
+
+    // 아코디언
+    // 아코디언 초기화
+    var acElem = $('.accordian');
+    acElem.find('dd:not(:first)').css('display','none');
+    acElem.find('dl dt').click(function(){        
+        if($('+dd',this).css('display') == 'none'){
+            $('dl dd').slideUp('slow');
+            $('+dd',this).slideDown('slow');
+        }
+    });
 });
